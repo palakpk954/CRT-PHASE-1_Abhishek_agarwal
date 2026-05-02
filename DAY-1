@@ -176,3 +176,55 @@ int main() {
  * ✅ END OF DAY 01 CODEBASE
  * ----------------------------------------------
  */
+
+home work 
+PROBLEM 8 : C++ program to check whether an alphabet is uppercase or lowercase:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    char ch;
+    cout << "Enter an alphabet: ";
+    cin >> ch;
+
+    if (ch >= 'A' && ch <= 'Z') {
+        cout << "Uppercase Alphabet" << endl;
+    }
+    else if (ch >= 'a' && ch <= 'z') {
+        cout << "Lowercase Alphabet" << endl;
+    }
+    else {
+        cout << "Not an Alphabet" << endl;
+    }
+
+    return 0;
+}
+
+PROBLEM 9 : C++ program for Age Group Classification
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cout << "Enter your age: ";
+    cin >> age;
+
+    if (age < 0) {
+        cout << "Invalid age" << endl;
+    }
+    else if (age <= 12) {
+        cout << "Child" << endl;
+    }
+    else if (age <= 19) {
+        cout << "Teenager" << endl;
+    }
+    else if (age <= 59) {
+        cout << "Adult" << endl;
+    }
+    else {
+        cout << "Senior Citizen" << endl;
+    }
+
+    return 0;
+}
