@@ -68,13 +68,17 @@ int main()
 cin >> n;
     //number of times to print the patterns
     for (int i=1; i<=n; i++){
-        //this defines what to print in pattern
-        for(int j = 1; j<=n-i; j++){
-            cout<< " ";
+        
+        //this defines no of spaces in a row
+        for(int j = n-i; j>=1; j--){
+            cout<< " " ;
         }
+        
+        //this defines no of stars in a row
         for(int k = 1; k<=i; k++){
             cout<< "*";
         }
+        
         cout<< "\n";
     }
 }
