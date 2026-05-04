@@ -55,3 +55,26 @@ cin>>n;
         cout<< "\n";
     }
 }
+
+//Problem no--4
+//Print right angle triangle image
+
+#include <iostream>
+using namespace std;
+
+int main()
+
+{int n;
+cin >> n;
+    //number of times to print the patterns
+    for (int i=1; i<=n; i++){
+        //this defines what to print in pattern
+        for(int j = 1; j<=n-i; j++){
+            cout<< " ";
+        }
+        for(int k = 1; k<=i; k++){
+            cout<< "*";
+        }
+        cout<< "\n";
+    }
+}
