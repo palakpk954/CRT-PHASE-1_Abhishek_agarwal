@@ -84,7 +84,7 @@ cin >> n;
 }
 
 //problem 5 
-//print a rectangle
+//print a rectangle(taking input from user, row, col)
 
 #include <iostream>
 using namespace std;
