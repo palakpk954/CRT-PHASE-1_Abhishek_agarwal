@@ -153,6 +153,31 @@ int main(){
 }
 
 
+//Problem--6
+//pointers 
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int age = 24;
+    int *ptr= &age;
+    
+    //with the help of variable
+    cout << age << "\n";
+    //printing the address of the variable
+    cout << ptr << "\n";
+    //using derefrencing with the help of pointer we are getting variable
+    cout << *ptr << "\n";
+    
+    // to change the value of variable using pointer
+    //age =28
+    *ptr = 28;
+    cout << *ptr;
+    
+    return 0;
+}
+
 
 
 
