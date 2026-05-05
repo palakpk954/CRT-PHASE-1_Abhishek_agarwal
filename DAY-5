@@ -60,3 +60,71 @@ int main()
   cout<<areaOfRectangle;
   return 0;
 }
+
+//Problem --4
+//Types of function
+//4.1--No Argument and no return type
+
+
+#include <iostream>
+using namespace std;
+
+void DoorBell(){
+    cout<<"Ting...Tong";
+}
+
+int main(){
+    DoorBell();
+    return 0;
+}
+
+//4.2 Argument, No Return type
+
+#include <iostream>
+using namespace std;
+
+void SendMessage(String message){
+    cout<< message;
+}
+
+int main(){
+    SendMessage("BJP win...");
+    return 0;
+}
+
+//4.3 No Argument , Return type
+
+#include <iostream>
+using namespace std;
+
+int ticketNumber(){
+    return 101;
+    
+}
+
+int main(){
+    cout<< ticketNumber();
+    return 0;
+}
+
+
+//4.4  Argument , Return type
+
+#include <iostream>
+using namespace std;
+
+int currencyConversion(int amountInUSD){
+    return amountInUSD/100;
+}
+
+int main(){
+    cout << currencyConversion(1000);
+    return 0;
+}
+
+
+
+
+
+
+
