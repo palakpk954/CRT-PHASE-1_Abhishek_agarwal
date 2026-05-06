@@ -145,6 +145,28 @@ int main(){
 }
 
 
+//Practice problems --7
+//ACCESS MODIFIER
+//7.1 --Public
+
+#include <iostream>
+using namespace std;
+
+class PublicPark {
+public:
+void enter(){
+    cout<< "anyone can enter in the park....";}
+};
+
+
+int main(){
+    PublicPark p;
+    p.enter();
+    return 0;
+}
+
+
+
 
 
 
