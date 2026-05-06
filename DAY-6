@@ -65,7 +65,7 @@ int main(){
 }
 
 
-//Practice problems ==1
+//Practice problems--4
 //coffee machine problems
 
 #include <iostream>
@@ -83,6 +83,41 @@ int main()
   cout<<totalprice;
   return 0;
 }
+
+//Practice problems--5
+//Smart AC remote 
+//Function overloading // default aurguments
+
+#include <iostream>
+using namespace std;
+
+void setTemprature(int temp = 22){
+    cout<< "Temprature set to " << temp << "\n";
+}
+
+void setTemprature(double temp){
+    cout<< "Temprature set to " << temp << "\n";
+}
+
+void setTemprature( string mode){
+    if(mode=="ECO"){
+        cout <<"Temprature set to 24" <<"\n";
+    }
+    else if (mode== "TURBO"){
+        cout <<"Temprature set to 18" <<"\n";
+    }
+}
+
+int main(){
+    setTemprature(); //defalut value==22
+    setTemprature(20.5); //mannually setting the setTemprature
+    setTemprature("ECO"); //set temprature to 24
+    setTemprature("TURBO"); //set temprature to 18
+    
+}
+
+
+
 
 
 
