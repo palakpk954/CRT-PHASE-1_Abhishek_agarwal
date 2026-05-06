@@ -64,3 +64,25 @@ int main(){
     
 }
 
+
+//Practice problems ==1
+//coffee machine problems
+
+#include <iostream>
+using namespace std;
+
+int price(int a, int b){
+    return a*b;
+}
+
+int main()
+{ int pricepercoffee = 100;
+  int noofcoffee = 5;
+  int totalprice = price(pricepercoffee, noofcoffee);
+  
+  cout<<totalprice;
+  return 0;
+}
+
+
+
