@@ -1,1 +1,21 @@
+//Problem--1
+//access specifier
+//7.2 public
 
+
+#include <iostream>
+using namespace std;
+class BankAccount {
+    private: 
+    int Balance = 50000;
+    public:
+    void showBalance(){
+        cout<<"balance in your acount is: "<< Balance;
+        
+    }
+};
+int main() {
+    BankAccount myaccount;
+    myaccount.showBalance();
+
+}
