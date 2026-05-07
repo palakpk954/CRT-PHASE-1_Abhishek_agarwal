@@ -126,4 +126,41 @@ int main(){
 }
 
 
+//Problem no---4
+//constructor (use to initialize the ob and class)
+// Types --- 4.1---default
+        //   4.2---parametrized
+        //   4.3---copy
+
+//4.2---parametrized
+#include <iostream>
+using namespace std;
+
+class Student{
+    public:
+    string Name;
+    int id;
+    
+//constructor 
+  Student(string stuName, int stuID){
+      Name = stuName;
+      id = stuID;
+  }
+  
+public:    
+void displayDetails(){
+    cout<< Name << " " <<id;
+}
+    
+};
+
+int main(){
+    Student std1("Palak", 101);
+    std1.displayDetails();
+    return 0;
+}
+
+
+
+
 
