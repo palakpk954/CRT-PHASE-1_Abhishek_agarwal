@@ -161,6 +161,53 @@ int main(){
 }
 
 
+//problem--6
+//pillar of OOPS
+//encapsulation: means we are binding the data into single unit. for ex( funtions, data, variables and methods).
+//into a single unit called class and making some restrictions in this class members.
+
+
+//Data security
+//Data Hiding: Encapsulation restricts direct access to private class variables, protecting sensitive data from unauthorized access.
+//Controlled access over my data
+//Validation before accessing the data
+//Code maintainability.
+
+
+#include <iostream>
+using namespace std;
+
+class bankAccount{
+    
+    private:
+    int balance;
+    
+    public:
+    void setBalance(int amount){
+        if(amount>=0){
+            balance=amount;
+            
+        } else{
+            cout<<"enter a valid no...";
+        }
+        
+    }
+    public:
+    int getbalance(){
+        return balance;
+    }
+    
+};
+
+int main(){
+    bankAccount Obj1;
+    Obj1.setBalance(5000);
+    cout<<Obj1.getbalance();
+}
+
+
+
+
 
 
 
