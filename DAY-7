@@ -89,7 +89,41 @@ int main(){
     obj1.accessOfSecretCode();
     
     BankAccount myaccount;
-    myaccount.showpin();
-    
-   
+    myaccount.showpin();   
 }
+
+//Problem no---4
+//constructor (use to initialize the ob and class)
+// Types --- 4.1---default
+        //   4.2---parametrized
+        //   4.3---copy
+
+//4.1---default
+#include <iostream>
+using namespace std;
+
+class wifiConnection {
+public:
+    string networkName;
+    int password;
+    
+    //constructor
+    wifiConnection(){
+        networkName = "ACTFibre";
+        password = 1234;
+    }
+    
+public:
+void showDetails(){
+    cout << "The network name of the wifi is "<< networkName << " and its password is " << password;
+}
+};
+
+int main(){
+    wifiConnection obj1;
+    obj1.showDetails();
+    return 0;
+}
+
+
+
