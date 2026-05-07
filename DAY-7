@@ -47,3 +47,49 @@ int main(){
     obj1.accessOfSecretCode();
 }
 
+//problem --3
+//access specifier
+//all in one code
+#include <iostream>
+using namespace std;
+
+class BankAccount {
+    private://can not be accessed outside the class
+    int pin = 50000;
+    public:
+    void showpin(){
+        cout<<"pin of your acount is: "<< pin <<"\n";
+    }
+};
+
+class Parent{
+protected:
+    int secretCode = 1234;
+};
+
+class child: public Parent{
+public:
+    void accessOfSecretCode(){
+        cout<<"secretCode of the bank is "<< secretCode <<"\n";
+    }
+};
+
+class Publicbank {
+public:
+void enter(){
+    cout<< "anyone can enter in the bank as it is public...." <<"\n";}
+};
+
+int main(){
+    
+    Publicbank p;
+    p.enter();
+    
+    child obj1;
+    obj1.accessOfSecretCode();
+    
+    BankAccount myaccount;
+    myaccount.showpin();
+    
+   
+}
