@@ -163,4 +163,118 @@ int main(){
 }
 
 
+/--problem ---6
+
+//POLYMORPHISM
+//means one name but many forms.
+//same functions behave diff depending on the type of the ob it called.
+
+//two types
+
+//---compile time---function overloading---static poly
+//resolved at complie time
+//function overloads--same function name but difff parameters
+//faster executions
+
+//---run time--function overriding---dynamic
+//resolved at runtime
+//function runtime---same funtion name ---same parameters---but different class.
+//it always uses virtual keyword.
+//achiving this through the concept of inheritance.
+
+//complie time code: PROBLEM--6
+
+//FUNCTION OVERLOADING
+
+#include <iostream>
+using namespace std;
+
+
+class Math{
+    public:
+    void add(int a, int b){
+        cout<< a+b << endl;
+    }
+    
+    public:
+    void add(int a, int b, int c){
+        cout<< a+b+c << endl;
+    }
+    
+     public:
+    void add(double a, double b, double c){
+        cout<< a+b+c << endl;
+    }
+};
+int main(){
+    Math m;
+    m.add(5,3);
+    m.add(3,6,7);
+    m.add(2.3,3.4,5.6);
+}
+
+
+//PROBLEM --7
+//POLYMORPHISM
+//means one name but many forms.
+
+//--problem ---6
+//same functions behave diff depending on the type of the ob it called.
+
+//two types
+
+//---compile time---function overloading---static poly
+//resolved at complie time
+//function overloads--same function name but difff parameters
+//faster executions
+
+//---run time--function overriding---dynamic
+//resolved at runtime
+//function runtime---same funtion name ---same parameters---but different class.
+//it always uses virtual keyword.
+//achiving this through the concept of inheritance.
+
+//complie time code: 
+
+//FUNCTION overriding PROBLEM---7
+
+
+#include<iostream>
+using namespace std;
+
+class Animal{
+    public:
+    virtual void sound(){
+        cout<< "Animal makes sound"<<endl;
+    }
+};
+
+class Dog:public Animal{
+    public:
+    void sound() override {
+        cout<< " Dog makes a sound"<<endl;
+        
+    }
+};
+
+class Cat:public Animal{
+    public:
+    void sound() override {
+        cout<< " Cat makes a sound"<<endl;
+        
+    }
+};
+
+
+int main() {
+    
+    Dog d;
+    Cat c;
+    d.sound();
+    c.sound();
+    
+}
+
+
+
 
