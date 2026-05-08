@@ -102,4 +102,65 @@ int main() {
 }
 
 
+PROBLEM---4
+
+// // Types -- 1.4 Multiple Inheritance
+
+// class Parent1 {
+// public:
+//     void giveMeMoney(){
+//         cout << "Mummy paisa do mujhe" << "\n";
+//     }
+// };
+
+// class Parent2 {
+// public:
+//     void giveMeMoney(){
+//         cout << "Papa paisa do mujhe"  << "\n";
+//     }   
+// };
+
+// class child : public Parent1, public Parent2 {
+//     // NO LOGIC
+// };
+
+// int main() {
+//     child obj1;
+//     //obj1.giveMeMoney();
+//     //obj1.Parent1::giveMeMoney();
+//     //obj1.Parent2::giveMeMoney();
+// }
+
+//HYBRID INHERITANCE
+//DIAMOND PROBLEM
+//--problem ---5
+
+#include <iostream>
+using namespace std;
+
+class A{
+    public:
+    void  Print(){
+        cout<<"BJP WONS";
+    }
+};
+
+class B: virtual public A{
+   
+};
+
+class C: virtual public A {
+   
+};
+
+class D :public B, public C{
+    
+};
+
+int main(){
+    D obj1;
+    obj1.Print();
+}
+
+
 
