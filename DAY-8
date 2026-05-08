@@ -29,3 +29,40 @@ int main(){
     
     return 0;
 }
+
+//problem--2
+//inheritance
+//conerting this into multilevel
+
+#include <iostream>
+using namespace std;
+
+class Vehicle{
+    public:
+    void start(){
+        cout<<"Vehicle starts..." << endl;
+    }
+};
+
+class Car : public Vehicle{
+    public:
+    void drive(){
+        cout<<"car is running..."<<endl;
+    }
+};
+
+class speedoMeter : public Car{
+    public:
+    void speed(){
+        cout<<"Car is running at 60km/h"<<endl;
+    }
+};
+
+int main(){
+    speedoMeter obj1;
+    obj1.drive();
+    obj1.start();
+    obj1.speed();
+    
+    return 0;
+}
