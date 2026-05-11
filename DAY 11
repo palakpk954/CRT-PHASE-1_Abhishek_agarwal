@@ -41,5 +41,41 @@ public:
 PALINDROME OF STRINGS PROBLEM
 
 PROBLEM--3
+//Q1.  pallindrome
+
+#include<iostream>
+using namespace std;
+bool isPalindrome(string str){
+    int start = 0;
+    int end = str.size() -1;
+    while(start < end){
+        if(str[start] == str[end]){
+            return true;
+        }
+        start++;
+        end--;
+    }
+    return false;
+}
+int main(){
+    string str;
+    cout << "enter a string= ";
+    cin >> str;
+    if(isPalindrome(str)){
+        cout << "pallindrome string";
+    }
+    else{
+        cout << "given string is not a pallindrome";
+    }
+    return 0;
+}
+
+//PROBLEM--4
+242. Valid Anagram
+
+//PROBLEM--5
+//ROTATE STRING
+
+
 
 
