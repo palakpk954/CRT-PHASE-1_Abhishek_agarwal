@@ -1,1 +1,35 @@
+PROGRAM 1: TO PRINT THE NUMBER FROM 1 TO N USING RECURSION
 
+#include <iostream>
+using namespace std;
+
+void printNums(int n) {
+    if (n == 1) {
+        cout << 1 << endl;  
+        return;
+    }
+    cout << n << " ";
+    printNums(n - 1);
+}
+
+int main() {
+    printNums(4);
+    return 0;
+}
+
+
+// PROGRAM 2: TO PRINT THE FACTORIAL OF A NUMBER USING RECURSION
+
+#include <iostream>
+using namespace std;
+
+int fact(int n) {
+    if (n == 0){
+    return 1;}
+    return n*fact(n-1);
+}
+
+int main() {
+    cout<<fact(4);
+    return 0;
+}
