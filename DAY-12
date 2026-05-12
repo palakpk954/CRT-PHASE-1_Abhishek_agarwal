@@ -33,3 +33,21 @@ int main() {
     cout<<fact(4);
     return 0;
 }
+
+
+// PROGRAM 3: TO PRINT THE SUM OF N NUMBERS OF ELEMENTS
+
+#include <iostream>
+using namespace std;
+
+int sum(int n) {
+    if (n == 1) {
+        return 1;
+    }
+    return n+ sum(n-1);
+}
+
+int main() {
+    cout<<sum(4);
+    return 0;
+}
