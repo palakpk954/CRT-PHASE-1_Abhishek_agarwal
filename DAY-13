@@ -25,3 +25,7 @@ int main() {
     cout<<ConsecutiveOnes(5);
     return 0;
 }
+
+
+
+
