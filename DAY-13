@@ -26,6 +26,24 @@ int main() {
     return 0;
 }
 
+//PROBLEM---2
+//TILE PROBLEM USING RECURSION.........
 
+#include <iostream>
+using namespace std;
+
+int ConsecutiveOnes(int n){
+    //Base condition
+    if(n<=3){
+        return 1;
+    }
+    //logic 
+    return ConsecutiveOnes ((n-4))+ ConsecutiveOnes((n-1));
+};
+
+int main() {
+    cout<<ConsecutiveOnes(6);
+    return 0;
+}
 
 
