@@ -1,1 +1,27 @@
+//PROBLEM---1
+//Count the no of binary strings without consecutive ones......... using RECURSION
 
+#include <iostream>
+using namespace std;
+
+int ConsecutiveOnes(int n){
+    //Base condition
+    if(n==0){
+        return 1;
+    }
+    if(n==1){
+        return 2;
+    }
+    
+    if(n==2){
+        return 3;
+    }
+    
+    //logic 
+    return ConsecutiveOnes(n-1)+ ConsecutiveOnes(n-2);
+};
+
+int main() {
+    cout<<ConsecutiveOnes(5);
+    return 0;
+}
