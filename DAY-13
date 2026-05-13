@@ -32,17 +32,17 @@ int main() {
 #include <iostream>
 using namespace std;
 
-int ConsecutiveOnes(int n){
+int tile(int n){
     //Base condition
     if(n<=3){
         return 1;
     }
     //logic 
-    return ConsecutiveOnes ((n-4))+ ConsecutiveOnes((n-1));
+    return tile ((n-4))+ tile((n-1));
 };
 
 int main() {
-    cout<<ConsecutiveOnes(6);
+    cout<<tile(6);
     return 0;
 }
 
