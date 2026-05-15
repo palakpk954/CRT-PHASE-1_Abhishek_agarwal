@@ -45,3 +45,26 @@ void reverseString(vector<char> & s){
     }
 }
 };
+
+//PROBLEM : 3 VALID PARENTHESIS LEETCODE: 20
+
+#include <stack>
+#include <string>
+
+class Solution {
+public:
+    bool isValid(std::string s) {
+        std::stack<char> st;
+        
+        for (char c : s) {
+            if (c == '(') st.push(')');
+            else if (c == '{') st.push('}');
+            else if (c == '[') st.push(']');
+            else if (st.empty() || st.top() != c) return false;
+            else st.pop();
+        }
+        return st.empty();
+    }
+};
+
+
