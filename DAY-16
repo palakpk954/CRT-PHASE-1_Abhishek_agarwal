@@ -146,4 +146,10 @@ vector<int> preorderTraversal(TreeNode* root){
     return ans;
 }
 };
+
+//PROBLEM:3 INORDER LEETCODE
+
+//PROBLEM :4 POSTORDER LEETCODE
+
+
     
